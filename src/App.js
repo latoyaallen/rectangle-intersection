@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+const rectangleContainer = {
+  position: 'relative',
+  zIndex: 0,
+  height: '400px',
+  width: '650px',
+}
+
+const pinkRectangle = {
+  position: 'absolute',
+  height: '250px',
+  width: '350px',
+  backgroundColor: '#FF00CC',
+  zIndex: 1,
+  top: '40px',
+  left: '40px',
+}
+
+const blueRectangle = {
+  position: 'absolute',
+  height: '250px',
+  width: '350px',
+  backgroundColor: '#00FFFF',
+  top: '120px',
+  left: '260px',
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={rectangleContainer}>
+      <div style={pinkRectangle}></div>
+      <div style={blueRectangle}></div>
     </div>
   );
 }
