@@ -1,4 +1,6 @@
 import React from 'react';
+import PinkRectangle from './components/PinkRectangle'
+import BlueRectangle from './components/BlueRectangle'
 
 const rectangleContainer = {
   position: 'relative',
@@ -7,30 +9,13 @@ const rectangleContainer = {
   width: '650px',
 }
 
-const pinkRectangle = {
-  position: 'absolute',
-  height: '250px',
-  width: '350px',
-  backgroundColor: '#FF00CC',
-  zIndex: 1,
-  top: '40px',
-  left: '40px',
-}
 
-const blueRectangle = {
-  position: 'absolute',
-  height: '250px',
-  width: '350px',
-  backgroundColor: '#00FFFF',
-  top: '120px',
-  left: '260px',
-}
 
 function App() {
   return (
     <div style={rectangleContainer}>
-      <div style={pinkRectangle}></div>
-      <div style={blueRectangle}></div>
+      <PinkRectangle />
+      <BlueRectangle />
     </div>
   );
 }
